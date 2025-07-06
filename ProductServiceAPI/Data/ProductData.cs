@@ -15,7 +15,9 @@ namespace ProductServiceAPI.Data
             Group = ProductGroupEnum.Apparel,
             Options = new[]
             {
-                new Option { Id = Guid.NewGuid(), Description = "Size M - Blue", QualityGroup = "Standard" }
+                new Option { Id = Guid.NewGuid(), Description = "Size M - Blue", QualityGroup = "Standard" },
+                new Option { Id = Guid.NewGuid(), Description = "Size A - Blue", QualityGroup = "Standard" },
+                new Option { Id = Guid.NewGuid(), Description = "Size L - Blue", QualityGroup = "Standard" }
             }
         },
         new Product
@@ -26,7 +28,9 @@ namespace ProductServiceAPI.Data
             Group = ProductGroupEnum.GeneralMerchandise,
             Options = new[]
             {
-                new Option { Id = Guid.NewGuid(), Description = "600W Power", QualityGroup = "High" }
+                new Option { Id = Guid.NewGuid(), Description = "600W Power", QualityGroup = "High" },
+                new Option { Id = Guid.NewGuid(), Description = "700W Power", QualityGroup = "High" },
+                new Option { Id = Guid.NewGuid(), Description = "300W Power", QualityGroup = "High" }
             }
         },
         new Product

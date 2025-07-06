@@ -26,6 +26,7 @@ namespace ProductServiceAPI
             builder.Services.AddTransient<IProductService, ProductService>();
             builder.Services.AddTransient<IProductCreateStrategyFactory,  ProductCreateStrategyFactory>();
             builder.Services.AddTransient<IProductUpdateStrategyFactory, ProductUpdateStrategyFactory>();
+            builder.Services.AddTransient<IProductSortingStrategyFactory, ProductSortingStrategyFactory>();
 
 
             var app = builder.Build();
